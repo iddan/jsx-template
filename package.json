@@ -1,0 +1,26 @@
+{
+  "name": "jsx-template",
+  "author": "Iddan Aharonson",
+  "description": "Static template engine based on the JSX Specification",
+  "version": "0.8.0",
+  "main": "bin/index.js",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url": "https://github.com/aniddan/jsx-template.git"
+  },
+  "scripts": {
+    "start": "yarn run build -- --watch",
+    "build": "babel src --out-dir bin"
+  },
+  "dependencies": {
+    "jsonpath": "^0.2.9",
+    "xml2json": "^0.10.0",
+    "xmldom": "^0.1.22",
+    "xpath": "^0.0.23"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0"
+  }
+}
