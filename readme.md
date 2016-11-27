@@ -19,8 +19,9 @@ JSX.compile(
 
 * [Motivation](#motivation)
 * [Prior Art](#prior-art)
+* [Syntax Nodes](#syntax-notes)
 * [API](#api)
-* [To do](#to-do)
+* [Todo](#todo)
 
 ## Motivation
 
@@ -38,6 +39,10 @@ The template engine borrows the props logic of well known templating engines lik
 * [React][React]
 * [{{ mustache }}][mustache]
 * [Handlebars][Handlebars]
+
+## Syntax notes
+
+*  A component can not invoke itself as it creates an endless recursion. 
 
 ## API
 
@@ -66,10 +71,10 @@ Register components (partials) to use within your JSX templates.
 * **name** - Component name to be referenced in the template.
 * **component** - Component JSX template.
 * **{name:compoennt}** - A map of component names and JSX templates.
- 
-## To do
-* dynamclly analyse element props;
-* when inserting element props split the text node;
+
+## Todo
+
+* formal testing
 
 [JSX]: https://facebook.github.io/jsx
 [React]: https://facebook.github.io/react
